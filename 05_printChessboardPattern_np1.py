@@ -6,12 +6,13 @@ def printChessboardPattern(n):
     result = np.zeros((n,n), dtype=int)
     for i in range(n):
         if i%2 == 0:
+            print(i)
             result[i][0] = 1
 
         for j in range(1,n):
             if result[i][j-1] == 0:
                 result[i][j]=1
-            print(result[i][j], end=" ")
+            # print(result[i][j], end=" ")
         print()
 
 if __name__ == "__main__":
