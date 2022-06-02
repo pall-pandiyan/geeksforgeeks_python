@@ -15,7 +15,7 @@ if __name__=="__main__":
 
 
 
-# the output will be...
+# sample
 
 # Enter the Principle amount: 10000
 # Enter the unit of Time: 5
