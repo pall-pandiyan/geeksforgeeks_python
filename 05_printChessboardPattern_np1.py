@@ -17,3 +17,15 @@ def printChessboardPattern(n):
 if __name__ == "__main__":
     n = int(input("Enter a number: ").strip())
     printChessboardPattern(n)
+
+#  sample:
+
+# Enter a number: 8
+# 1 0 1 0 1 0 1 
+# 0 1 0 1 0 1 0 
+# 1 0 1 0 1 0 1 
+# 0 1 0 1 0 1 0 
+# 1 0 1 0 1 0 1 
+# 0 1 0 1 0 1 0 
+# 1 0 1 0 1 0 1 
+# 0 1 0 1 0 1 0
