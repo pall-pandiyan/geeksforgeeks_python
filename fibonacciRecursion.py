@@ -6,7 +6,11 @@ def fibonacci(n):
     
 if __name__ == "__main__":
     n = int(input("Enter a number: ").strip())
-    print(f"Fibonacci Number of {n} is {fibonacci(n)}")
+
+    if n<0:
+        print(f"Incorrect Input! Enter a positive value!")
+    else:
+        print(f"Fibonacci Number of {n} is {fibonacci(n)}")
 
 
 # Sample:
