@@ -1,11 +1,18 @@
+import math
+
 def printPrimeNumbersInRange(n):
     if n<2:
         return False
-    r = 2
-    while r*r <= n:
-        if n%r == 0:
+
+    # r = 2
+    # while r*r <= n:
+    #     if n%r == 0:
+    #         return False
+    #     r = r+1
+
+    for i in range(2, int(math.sqrt(n))+1):
+        if n%i == 0:
             return False
-        r = r+1
 
     return True
 
