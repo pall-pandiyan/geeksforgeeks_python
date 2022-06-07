@@ -3,10 +3,10 @@ def rotateArray(arr, n, d):
     for i in range(d,n):
         result.append(arr[i])
     
-    for i in range(n-d):
+    for i in range(d):
         result.append(arr[i])
     
-    return result[:n]
+    return result
 
 
 if __name__ == "__main__":
