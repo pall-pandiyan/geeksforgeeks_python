@@ -1,8 +1,13 @@
 def checkElement(lst, target):
-    if target in lst:
-        return True
-    else:
-        return False
+    # if target in lst:
+    #     return True
+    # else:
+    #     return False
+
+    for element in lst:
+        if target == element:
+            return True
+    return False
 
 
 if __name__ == "__main__":
