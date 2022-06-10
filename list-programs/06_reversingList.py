@@ -22,10 +22,12 @@ if __name__ == "__main__":
     lst.reverse()
     print(f"Reverse using reverse(): {lst}")
 
+    lst = list(reversed(lst))
+    print(f"Reverse using reversed(): {lst}")
+
     lst2 = []
     for i in lst:
         lst2.insert(0, i)
     print(f"Reverse using insert(): {lst2}")
     del lst2
 
-    
