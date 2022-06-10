@@ -4,11 +4,14 @@ def checkElement(lst, target):
     # else:
     #     return False
 
-    for element in lst:
-        if target == element:
-            return True
-    return False
+    #for element in lst:
+    #     if target == element:
+    #         return True
+    # return False
 
+    if lst.count(target)>0:
+        return True
+    return False
 
 if __name__ == "__main__":
     lst = list(map(int, input("Enter the list: ").split()))
