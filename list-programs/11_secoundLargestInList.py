@@ -10,10 +10,16 @@ def secondLargest(lst):
     print(f"Second Largest using for loop: {largest2}")
 
     lst.sort()
-    print(f"Secound Largest using sort(): {lst[len(lst)-2]}")
+    print(f"Secound Largest using sort(): {lst[-2]}")
 
 
 if __name__ == "__main__":
     lst = [12, 10, 3, 5, 7, 2, 9, 11]
     print(f"Sample List is {lst}")
     secondLargest(lst)
+
+# Sample:
+
+# Sample List is [12, 10, 3, 5, 7, 2, 9, 11]
+# Second Largest using for loop: 11
+# Secound Largest using sort(): 11
