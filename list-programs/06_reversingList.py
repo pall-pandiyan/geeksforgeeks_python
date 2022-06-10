@@ -1,7 +1,7 @@
 if __name__ == "__main__":
     lst = [2,5,10,12,13,15,20,16,25,1,30]
     print(f"Sample List: {lst}")
-    
+
     n = len(lst)
     for i in range((n+1)//2):
         adjI = n-1-i
@@ -11,7 +11,6 @@ if __name__ == "__main__":
         lst[i], lst[adjI] = lst[adjI], lst[i]
     print(f"Reverse using for loop: {lst}")
 
-    lst = [2,5,10,12,13,15,20,16,25,1,30]
     start = 0
     end = n-1
     while(start<end):
@@ -20,5 +19,13 @@ if __name__ == "__main__":
         end = end-1
     print(f"Reverse using while loop: {lst}")
 
-    reversed(lst)
+    lst.reverse()
     print(f"Reverse using reverse(): {lst}")
+
+    lst2 = []
+    for i in lst:
+        lst2.insert(0, i)
+    print(f"Reverse using insert(): {lst2}")
+    del lst2
+
+    
