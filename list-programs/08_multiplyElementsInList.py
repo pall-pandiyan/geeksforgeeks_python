@@ -1,3 +1,5 @@
+from numpy import prod
+
 def multiplyList(lst):
     result = 1
     for i in lst:
@@ -15,6 +17,8 @@ def multiplyList(lst):
         start = start+1
         end = end-1
     print(f"Multiply using while loop: {result}")
+
+    print(f"Muliply using numpy.prod(): {prod(lst)}")
 
 
 if __name__ == "__main__":
