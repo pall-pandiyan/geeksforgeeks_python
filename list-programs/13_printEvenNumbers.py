@@ -6,6 +6,7 @@ def printEven(lst):
     print(f"using for loop: {result}")
 
     start = 0
+    result = []
     while start<len(lst):
         i = lst[start]
         if i%2 == 0:
@@ -23,4 +24,4 @@ if __name__ == "__main__":
 
 # sample list: [2, 10, 15, 1, 3, 6, 20, 100, 14]
 # using for loop: [2, 10, 6, 20, 100, 14]
-# using while loop: [2, 10, 6, 20, 100, 14, 2, 10, 6, 20, 100, 14]
+# using while loop: [2, 10, 6, 20, 100, 14]
