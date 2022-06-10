@@ -19,3 +19,6 @@ if __name__ == "__main__":
         start = start+1
         end = end-1
     print(f"Reverse using while loop: {lst}")
+
+    reversed(lst)
+    print(f"Reverse using reverse(): {lst}")
