@@ -14,6 +14,12 @@ def printEven(lst):
         start = start+1
     print(f"using while loop: {result}")
 
+    result = [x for x in lst if x%2==0]
+    print(f"using list comprehention: {result}")
+
+    result = list(filter(lambda x: x%2==0, lst))
+    print(f"using filter() and lambda: {result}")
+
 
 if __name__ == "__main__":
     lst = [2,10,15,1,3,6,20,100,14]
@@ -25,3 +31,5 @@ if __name__ == "__main__":
 # sample list: [2, 10, 15, 1, 3, 6, 20, 100, 14]
 # using for loop: [2, 10, 6, 20, 100, 14]
 # using while loop: [2, 10, 6, 20, 100, 14]
+# using list comprehention: [2, 10, 6, 20, 100, 14]
+# using filter() and lambda: [2, 10, 6, 20, 100, 14]
