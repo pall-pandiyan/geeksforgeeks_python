@@ -1,5 +1,7 @@
-def printEvens(start, stop, step):
-    for i in range(start, stop+1, step):
+def printEvens(start, stop):
+    if start%2 == 1:
+        start = start+1
+    for i in range(start, stop+1, 2):
         print(i, end=" ")
     print()
 
@@ -7,13 +9,11 @@ def printEvens(start, stop, step):
 if __name__ == "__main__":
     start = int(input("Enter the start range: ").strip())
     stop = int(input("Enter the stop range: ").strip())
-    step = int(input("Enter the step: ").strip())
 
-    printEvens(start, stop, step)
+    printEvens(start, stop)
 
 # Sample:
 
-# Enter the start range: 100
-# Enter the stop range: 200
-# Enter the step: 5
-# 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175 180 185 190 195 200
+# Enter the start range: 11
+# Enter the stop range: 30
+# 12 14 16 18 20 22 24 26 28 30 
