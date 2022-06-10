@@ -1,4 +1,5 @@
 from numpy import prod
+from functools import reduce
 
 def multiplyList(lst):
     result = 1
@@ -18,7 +19,11 @@ def multiplyList(lst):
         end = end-1
     print(f"Multiply using while loop: {result}")
 
-    print(f"Muliply using numpy.prod(): {prod(lst)}")
+    print(f"Multiply using numpy.prod(): {prod(lst)}")
+
+    print(f"Multiply using reduce(): {reduce(lambda x,y: x*y, lst)}")
+
+    
 
 
 if __name__ == "__main__":
