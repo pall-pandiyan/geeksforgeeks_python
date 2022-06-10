@@ -8,6 +8,7 @@ if __name__ == "__main__":
         # temp = lst[i]
         # lst[i] = lst[adjI]
         # lst[adjI] = temp
+        lst[i], lst[adjI] = lst[adjI], lst[i]
         
     print(f"Reverse using for loop: {lst}")
 
