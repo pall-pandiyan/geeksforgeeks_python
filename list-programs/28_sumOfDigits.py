@@ -25,6 +25,7 @@ if __name__ == "__main__":
     print(f"Sample List: {lst}")
     sumOfDigits(lst)
 
+
 # Sample:
 
 # Sample List: [10, 2, 5, 20, 1, 25, 100, 52, 27]
