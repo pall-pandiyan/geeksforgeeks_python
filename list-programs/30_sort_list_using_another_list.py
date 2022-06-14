@@ -1,6 +1,11 @@
 def sort_list(lst1, lst2):
     zipped = zip(lst2, lst1)
-    return [x for _,x in sorted(zipped)]
+    print("sorted using zip():", [x for _,x in sorted(zipped)])
+
+    result = {lst1[i]:lst2[i] for i in range(len(lst2))}
+    sorted_list = sorted(result.items(), key=lambda x: x[1])
+    result = [x for x,_ in sorted_list]
+    print(f"sorted using dict: {result}")
 
 
 if __name__ == "__main__":
@@ -8,7 +13,8 @@ if __name__ == "__main__":
     lst2 = [5,9,8,6,7,4,1,0,2,3,10]
     print(f"List 1: {lst1}")
     print(f"List 2: {lst2}")
-    print(f"sorted list: {sort_list(lst1, lst2)}")
+    sort_list(lst1, lst2)
+
 
 
 # Sample:
