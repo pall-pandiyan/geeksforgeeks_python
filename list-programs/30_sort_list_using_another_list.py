@@ -21,4 +21,5 @@ if __name__ == "__main__":
 
 # List 1: ['a', 'c', 'd', 'f', 'g', 'h', 'o', 'n', 'p', 'q', 'z']
 # List 2: [5, 9, 8, 6, 7, 4, 1, 0, 2, 3, 10]
-# sorted list: ['n', 'o', 'p', 'q', 'h', 'a', 'f', 'g', 'd', 'c', 'z']
+# sorted using zip(): ['n', 'o', 'p', 'q', 'h', 'a', 'f', 'g', 'd', 'c', 'z']
+# sorted using dict: ['n', 'o', 'p', 'q', 'h', 'a', 'f', 'g', 'd', 'c', 'z']
