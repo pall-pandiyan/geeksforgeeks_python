@@ -10,6 +10,9 @@ def addTwoMatrics(lst1, lst2):
         result.append(row)
     print(f"added using for loops: {result}")
 
+    result = [list(map(sum, zip(*t))) for t in zip(lst1,lst2)]
+    print(f"added using list comprehension: {result}")
+
 
 if __name__ == "__main__":
     lst1 = [
