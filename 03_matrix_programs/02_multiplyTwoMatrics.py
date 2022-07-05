@@ -1,11 +1,13 @@
 def matrics_multiply(a, b):
     c = []
     for i in range(len(a)):
-        temp = 0
-        tempList = []
+        temp = []
         for j in range(len(b[0])):
-            temp = temp + (a[i][j] * b[j][i])
-        tempList.append(temp)
+            sum = 0
+            for k in range(len(b)):
+                sum = sum + (a[i][k]*b[k][j])
+            temp.append(sum)
+        c.append(temp)
     return c
 
 
@@ -26,3 +28,6 @@ if __name__ == "__main__":
 
 # Sample:
 
+# The matrics A is [[12, 7, 3], [4, 5, 6], [7, 8, 9]]
+# The matrics B is [[5, 8, 1, 2], [6, 7, 3, 0], [4, 5, 9, 1]]
+# The multiplication matrics is [[114, 160, 60, 27], [74, 97, 73, 14], [119, 157, 112, 23]]
